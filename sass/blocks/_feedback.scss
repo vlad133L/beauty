@@ -1,0 +1,47 @@
+.feedback {
+	padding: 20px 0;
+	border-bottom: 1px solid $gray;
+}
+
+
+.feedback__row {
+	@include flex(space-between, center);
+	flex-wrap: wrap;
+}
+
+.logo {
+	@include flex(flex-start, center);
+
+}
+
+.logo__name {
+	margin-left: 20px;
+}
+
+.name {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.1666;
+	letter-spacing: 0.1em;
+	color: $accent;
+}
+
+.feedback__contacts {
+	@include flex(flex-start, center);
+}
+
+.feedback__phone {
+	font-size: 16px;
+}
+
+.feedback__button {
+	background: $white;
+	margin-left: 40px;
+	transition: 0.2s ease-in;
+	border: 2px solid $accent;
+
+	&:hover {
+		color: $white;
+		background-color: $accent;
+	}
+}

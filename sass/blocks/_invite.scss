@@ -1,0 +1,58 @@
+.invite__row {
+	@include flex (space-between, center);
+}
+
+.invite__item {
+	background: $accent;
+	padding: 35px 45px 35px 40px;
+	display: flex;
+	align-items: center;
+	width: 540px;
+}
+
+.invite__text {
+	color: $white;
+	margin-right: 65px;
+
+	&>*:not(:last-child) {
+		margin-bottom: 25px;
+	}
+}
+
+.invite__name {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.1666;
+}
+
+.invite__desc {
+	line-height: 1.43;
+}
+
+.invite__email {
+	background: $white;
+	border-radius: 30px;
+	padding: 9px 25px;
+	width: 225px;
+
+	&::placeholder {
+		line-height: 1.43;
+		color: #C4C4C4;
+	}
+}
+
+.invite__button {
+	background: $accent;
+	border: 2px solid $white;
+	border-radius: 30px;
+	text-align: center;
+	color: $white;
+	min-height: 35px;
+	padding: 0 29px;
+	transition: 0.2s ease-in;
+
+	&:hover {
+		background-color: $white;
+		color: $accent;
+	}
+}

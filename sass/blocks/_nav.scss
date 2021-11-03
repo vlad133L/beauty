@@ -1,0 +1,22 @@
+.nav {
+	background-color: $gray;
+	padding: 17px 0 16px 0;
+}
+
+
+.nav__list {
+	@include flex(center, center);
+	flex-wrap: wrap;
+}
+
+.nav__item {
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.nav__link {
+	&:hover {
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,82 @@
+.main-offer {
+	padding-top: 20px;
+	background-image: url("./../img/main/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container--01 {
+	padding-right: 67px;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: -20px;
+		right: -55px;
+		background-image: url('./../img/main/circle1.svg');
+		width: 859px;
+		height: 859px;
+		background-repeat: no-repeat;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -20px;
+		right: 35px;
+		background-image: url('./../img/main/circle2.svg');
+		width: 677px;
+		height: 677px;
+		background-repeat: no-repeat;
+	}
+}
+
+.main-offer__row {
+	@include flex(space-between, center);
+	flex-wrap: wrap;
+}
+
+.main-offer__text {
+	max-width: 308px;
+
+	&>*:not(:last-child) {
+		margin-bottom: 50px;
+	}
+}
+
+.main-offer__name {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 1.1666;
+	color: $white;
+}
+
+.main-offer__desc {
+	line-height: 1.43;
+	color: $white;
+}
+
+.main-offer__button {
+	line-height: 1.14;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: $white;
+	border: 2px solid $white;
+	transition: 0.2s ease-in;
+
+	&:hover {
+		background-color: $white;
+		color: $accent;
+	}
+}
+
+.main-offer__img {
+	z-index: 1;
+
+	img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+}

@@ -1,0 +1,38 @@
+.contacts {
+	padding: 38px 0;
+}
+
+.contacts__row {
+	@include flex (flex-start, center);
+	flex-wrap: wrap;
+}
+
+.contacts__socials {
+	display: flex;
+
+	&>*:not(:last-child) {
+		margin-right: 16px;
+	}
+}
+
+
+.socials__link {
+	border-radius: 100%;
+	border: 2px solid $accent;
+	width: 45px;
+	height: 45px;
+	position: relative;
+
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.contacts__address {
+	line-height: 1.143;
+	margin-left: 205px;
+	margin-right: 105px;
+}

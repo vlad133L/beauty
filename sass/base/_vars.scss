@@ -1,0 +1,11 @@
+$gray: #EFEFEF;
+$accent:#66C05D;
+$dark: #333333;
+$white: #ffffff;
+$black: #000000;
+
+@mixin flex($jc, $ai) {
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+}
