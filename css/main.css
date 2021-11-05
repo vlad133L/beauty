@@ -131,6 +131,17 @@ h6 {
 .nav {
   background-color: #EFEFEF;
   padding: 17px 0 16px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.nav.fix {
+  background-color: #1a1a1a;
+  color: #fff;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .nav__list {
@@ -158,6 +169,7 @@ h6 {
 .feedback {
   padding: 20px 0;
   border-bottom: 1px solid #EFEFEF;
+  margin-top: 34px;
 }
 
 .feedback__row {
